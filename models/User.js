@@ -34,6 +34,10 @@ User.init(
             validate: {
                 len: [8]
             }
+        },
+        avatar_url: {
+            type: DataTypes.STRING,
+            allowNull: false
         }
     },
     {
