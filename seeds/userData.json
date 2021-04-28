@@ -1,0 +1,14 @@
+[
+    {
+      "userName":"Test User1",
+      "email": "test1@hotmail.com",
+      "password":"1234abc",
+      "avatarId":""
+    },
+    {
+       "userName":"Test User1",
+       "body": "test2@gmail.com?",
+       "password":"1234abc",
+       "avatarId":""
+    }
+]
