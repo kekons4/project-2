@@ -11,5 +11,23 @@
         "body": "What do you think will happen between Dom and his brother Jakob? Will Cipher win or loose? ",
         "user_id":2,
         "category_id":2
+    },
+    {
+        "title":"music",
+        "body": "Who do you want to win the Billboard Music Awards? ",
+        "user_id":2,
+        "category_id":3
+    },
+    {
+        "title":"sports",
+        "body": "As the PGA Tour NASCAR and MLB are in full swing, what is the game you are most looking forward to? ",
+        "user_id":2,
+        "category_id":4
+    },
+    {
+        "title":"books",
+        "body": "What is your most anticipated book of 2021 to read?",
+        "user_id":2,
+        "category_id":2
     }
 ]    
