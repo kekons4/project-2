@@ -2,13 +2,13 @@
     {
       "username":"Test User1",
       "email": "test1@hotmail.com",
-      "password":"1234abc",
-      "avatar_url":""
+      "password":"12348abc",
+      "avatar_url":"slkdjfoj"
     },
     {
        "username":"Test User1",
-       "email": "test2@gmail.com?",
-       "password":"1234abc",
-       "avatar_url":""
+       "email": "test2@gmail.com",
+       "password":"12345abc",
+       "avatar_url":"sjdpfoj"
     }
 ]
