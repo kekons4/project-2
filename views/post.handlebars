@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-header">
+        <h2>{{post.title}}</h2>
+    </div>
+    <div class="card-body">
+        <p>{{post.body}}</p>
+        {{#each comments as |comment|}}
+        <div class="comment-card">
+            <p>{{comment.body}}</p>
+            <span>{{comment.user.username}}</span>
+            <span>{{comment.date_created}}</span>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+{{#if logged_in}}
+<form id="commenting" action="submit">
+    <div class="comment">
+        <label for="comment-body">Comment:</label>
+        <input id="body" type="text">
+        <button type="submit">comment</button>
+    </div>
+</form>
+{{/if}}
+
+<script src="/js/createPost.js"></script>
