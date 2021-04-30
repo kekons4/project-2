@@ -1,0 +1,12 @@
+<div class="post-cont">
+     {{#each posts as |post|}}
+     <div class="post-card">
+         <span>{{post.title}}</span>
+         <span>{{formate_date post.date_created}}</span>
+         <a href="/dashboards/delete"><i class="fa fa-trash"></i></a>
+     </div>
+     {{/each}}
+     <button class="new-post" id="new-post">+Post</button>
+</div>
+
+<script src="/js/newPost.js"></script>
