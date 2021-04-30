@@ -5,10 +5,11 @@
     <div class="card-body">
         {{#each posts as |post|}}
         <a href="/post/{{post.id}}">
-            <div class="comment-card">
+            <div class="post-card">
                 <h5>{{post.title}}</h5>
                 <p>{{post.body}}</p>
                 <span>{{post.username}}</span>
+                <span>{{formate_date post.date_created}}</span>
             </div>
         </a>
         {{/each}}
