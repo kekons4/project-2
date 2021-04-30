@@ -1,17 +1,17 @@
 [
 {
-"Name":"TV Show"
+"name":"TV Show"
 },
 {
-"Name":"Movies"
+"name":"Movies"
 },
 {
-"Name":"Music"
+"name":"Music"
 },
 {
-"Name":"Sports"
+"name":"Sports"
 },
 {
- "Name":"Books"
+ "name":"Books"
  }
 ]
