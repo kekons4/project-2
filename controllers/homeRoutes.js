@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, User, Category } = require('../../models');
+const { Post, User, Category } = require('../models');
 
 router.get('/', async (req, res) => {
     try {
@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
                     module: User,  
                 },
             ],
-        }),
+        });
 
         const Posts = postData.map((post) => post.get({ plain: true }));
 
