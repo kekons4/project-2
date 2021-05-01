@@ -1,0 +1,41 @@
+root{
+   --aqua:#5DFDCB;
+    --skyblu:#90D7FF;
+    --lgtblu:#C9F9FF;
+    --gryblu:#BFD0E0;
+    --lavendergry:#B8B3BE;
+}
+head
+body
+.category-cont{
+    display: flex;
+    background-color: var(--skyblu);
+    width: 3px animate top;
+}
+.card{
+outline-offset: 2cm;
+border-spacing: 5cm;
+border-radius: 15px 50px 30px;
+
+}
+.card :hover{
+border-style: ridge;
+
+}
+.card-header{
+text-align: center;
+background-color: var(--gryblu);
+color: black;
+}
+.card-body{
+text-align: justify;
+background-color: var(--lgtblu);
+color: navy;
+}
+.comment-card{
+    background-color: aquamarine;
+    text-decoration-color: black;
+}
+.comment-card :hover{
+    color: rgb(27, 154, 147) ;
+}
