@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const { Post, User, Category } = require('../models');
 
-router.get('/', async (req, res) => {
+router.get('/:name', async (req, res) => {
     try {
-        const categoryData = await Category.findAll({ 
+        const categoryData = await Category.findAll(req.params.name, { 
             include: [
                 {
                     model: Post,
@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
         
         const categories = categoryData.map((category) => category.get({ plain: true }));
 
-        res.render('homepage', {
+        res.render('category', {
             category,
             logged_in: req.session.logged_in
         });
@@ -27,3 +27,5 @@ router.get('/', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+module.exports = router;
