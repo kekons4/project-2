@@ -1,12 +1,16 @@
-root{
+:root{
    --aqua:#5DFDCB;
     --skyblu:#90D7FF;
     --lgtblu:#C9F9FF;
     --gryblu:#BFD0E0;
     --lavendergry:#B8B3BE;
 }
-head
+ 
 body
+{background-color: var(--lavendergry);
+    text-align: center;
+    text-shadow: 1,1,1 navy;
+}
 .category-cont{
     display: flex;
     background-color: var(--skyblu);
@@ -39,3 +43,24 @@ color: navy;
 .comment-card :hover{
     color: rgb(27, 154, 147) ;
 }
+#email{
+    color: navy;
+    box-shadow: navy;
+    border: thick;
+}
+#password{
+    color: black;
+    box-shadow: navy;
+    border: thick;
+}
+#login-btn{
+    background-color: palegreen;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+#login-btn :hover{
+    background-color: rgb(135, 189, 135);
+      }
