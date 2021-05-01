@@ -6,7 +6,12 @@ router.get('/', async (req, res) => {
         const postData = await Post.findAll({ 
             include: [
                 { 
-                    module: User,  
+                    model: User,
+                    attributes: ["username", "avatar_url"]  
+                },
+                {
+                    model: Category,
+                    attributes: ["name"]
                 }
             ]
         });
