@@ -2,29 +2,42 @@ const router = require('express').router();
 const { Post } = require('../../models');
 const withAuth = require('')
 
-router.post('/create', withAuth, async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
     try {
-        const postData = await Post.create(req.body);
+        const newPost = await Post.create({...req.body, user_id: req.session.user_id});
+        res.status(200).json(newPost);
+    } catch (err) {
+        res.status(400).json(err);
+    }
+});
+
+
+router.delete('/:id', withAuth, async (req, res) => {
+    try {
+        const postData = await Post.destroy({where: {id: req.params.id, user_id: req.session.user_id}});
         if (!postData) {
-            res.status(400).json({message: "There was an issue creating your post!"})
+            res.status(400).json({message: "There was no post found with this id."});
             return;
         }
         res.status(200).json(postData);
     } catch (err) {
-        res.status(400).json(err);
+        res.status(500).json(err);
     }
-})
+});
 
 
-router.delete('/delete', withAuth, async (req, res) => {
+router.put('/:id', withAuth, async (req, res) => {
     try {
-        const postData = await Post.create(req.body);
+        const postData = await Post.update({where: {id: req.params.id, user_id: req.session.user_id}});
         if (!postData) {
-            res.status(400).json({message: "There was an issue creating your post!"})
+            res.status(404).json({message: "There was no post found with this id."});
             return;
         }
         res.status(200).json(postData);
     } catch (err) {
-        res.status(400).json(err);
+        res.status(500).json(err);
     }
-})
+});
+
+
+module.exports = router;
