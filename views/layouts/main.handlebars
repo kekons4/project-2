@@ -19,6 +19,9 @@
             <a href="/login">Login</a>
             {{/if}}
         </nav>
+        {{#if logged_in}}
+        <img style="width: 10%;" src={{avatar_url}} alt="user avatar image">
+        {{/if}}
     </header>
 
     <main>
