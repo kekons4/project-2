@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Post, User, Category } = require('../../models');
 
-router.get('/post/:id', async (req, res) => {
+router.get('/:name', async (req, res) => {
     try {
         const categoryData = await Category.findAll(req.params.name, { 
             include: [
