@@ -12,9 +12,18 @@
         <h1>Social-Social Media</h1>
         <nav class="nav">
             <a href="/">Home</a>
+            <a href="/categories">Categories</a>
             <a href="/dashboard">Dashboard</a>
+            {{#if logged_in}}
+            <a id="logout">logout</a>
+            {{else}}
             <a href="/login">Login</a>
+            <a href="/signup">Signup</a>
+            {{/if}}
         </nav>
+        {{#if logged_in}}
+        <img style="width: 10%;" src={{avatar_url}} alt="user avatar image">
+        {{/if}}
     </header>
 
     <main>

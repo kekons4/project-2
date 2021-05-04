@@ -5,13 +5,15 @@ const withAuth = require('../../utils/auth');
 
 router.post('/', async (req, res) => {
     try {
+        console.log(req.body.avatar_url);
         const userData = await User.create(req.body);
 
         req.session.save(() => {
-        req.session.user_id = userData.id;
-        req.session.logged_in = true;
+            req.session.user_id = userData.id;
+            req.session.logged_in = true;
+            req.session.avatar_url = userData.avatar_url; 
 
-        res.status(200).json(userData);
+            res.status(200).json(userData);
         });
     } catch (err) {
         res.status(400).json(err);
@@ -33,10 +35,12 @@ router.post('/login', async (req, res) => {
             res.status(400).json({ message: "You have entered an incorrect username or password, please try again" });
             return;
         }
+        console.log(userData.avatar_url);
 
         req.session.save(() => {
             req.session.user_id = userData.id;
             req.session.logged_in =true;
+            req.session.avatar_url = userData.avatar_url;
 
             res.json({ user: userData, message: 'You are now logged in!' });
         });
