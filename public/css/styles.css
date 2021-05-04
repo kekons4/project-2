@@ -7,9 +7,16 @@
 }
  
 body
-{background-color: var(--lavendergry);
+{background-color: var(--gryblu);
     text-align: center;
     text-shadow: 1,1,1 navy;
+}
+.nav{
+    float: left;
+}
+a.nav{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
 }
 .category-cont{
     display: flex;
@@ -44,16 +51,19 @@ color: navy;
     color: rgb(27, 154, 147) ;
 }
 #email{
+    float: center;
     color: navy;
     box-shadow: navy;
     border: thick;
 }
 #password{
+    float: center;
     color: black;
     box-shadow: navy;
     border: thick;
 }
 #login-btn{
+    float: center;
     background-color: palegreen;
     color: white;
     padding: 15px 32px;
