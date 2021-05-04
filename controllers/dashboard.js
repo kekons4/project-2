@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Post, User, Category } = require('../models');
 
+
 router.get('/', async (req, res) => {
     try {
         const postData = await Post.findAll({ 
@@ -18,7 +19,7 @@ router.get('/', async (req, res) => {
 
         const posts = postData.map((post) => post.get({ plain: true }));
 
-        res.render('homepage', {
+        res.render('dashboard', {
             posts,
             logged_in: req.session.logged_in
         });

@@ -4,7 +4,7 @@ const signupHandler = async(event) => {
     const email = document.querySelector('#email').value.trim();
     const username = document.querySelector('#username').value.trim();
     const password = document.querySelector('#password').value.trim();
-    const passwordConfirm = document.querySelector('#confirm-password');
+    const passwordConfirm = document.querySelector('#confirm-password').value.trim();
 
     if(password !== passwordConfirm) {
         alert('ERROR the passwords do not match, try again');
