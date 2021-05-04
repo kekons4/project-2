@@ -76,8 +76,8 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-router.get('/post', withAuth, async (req, res) => {
-    res.render('post', {logged_in: req.session.logged_in, user_id: req.session.user_id});
-})
+// router.get('/post', withAuth, async (req, res) => {
+//     res.render('post', {logged_in: req.session.logged_in, user_id: req.session.user_id});
+// })
 
 module.exports = router;

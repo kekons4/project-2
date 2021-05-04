@@ -9,7 +9,7 @@ const postRoutes = require('./post');
 
 router.use('/api', apiRoutes);
 router.use('/', homeRoutes);
-router.use('/category', categoryRoutes);
+router.use('/categories', categoryRoutes);
 router.use('/login', loginRoutes);
 router.use('/signup', signupRoutes);
 router.use('/dashboard', dashboardRoutes);
