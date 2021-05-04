@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        <h2>{{category.name}}</h2>
+        <h2>{{category_name}}</h2>
     </div>
     <div class="card-body">
         {{#each posts as |post|}}
@@ -9,7 +9,8 @@
                 <h5>{{post.title}}</h5>
                 <p>{{post.body}}</p>
                 <span>{{post.username}}</span>
-                <span>{{post.date_created}}</span>
+                <span>{{format_date post.date_created}}</span>
+                {{post.category.name}}
             </div>
         </a>
         {{/each}}

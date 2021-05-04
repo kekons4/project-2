@@ -1,3 +1,5 @@
+var avatar_url = "";
+
 const signupHandler = async(event) => {
     event.preventDefault();
 
@@ -11,10 +13,12 @@ const signupHandler = async(event) => {
         return;
     }
 
+    console.log(avatar_url);
+
     if(email && password) {
         const response = await fetch('/api/users', {
             method: 'POST',
-            body: JSON.stringify({ email, username, password }),
+            body: JSON.stringify({ email, username, password, avatar_url }),
             headers: { 'Content-Type': 'application/json' }
         });
 
@@ -25,5 +29,10 @@ const signupHandler = async(event) => {
         }
     }
 };
+
+$('.avatar-img-cont').on('click', "img", (event) => {
+    avatar_url = $(event.target).attr('data-url');
+    return;
+});
 
 document.querySelector('#signup').addEventListener('submit', signupHandler);
