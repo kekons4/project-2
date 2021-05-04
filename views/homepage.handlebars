@@ -1,31 +1,31 @@
 <div class="category-cont">
     {{!-- {{#each posts as |post|}} --}}
     <div class="tv-show" data-catid="1">
-        <h2>Tv Shows</h2>
+        <a href="/categories/1"><h2>Tv Shows</h2></a>
         {{#each posts as |post| }}
         {{{map_category post.title post.body post.user.username post.category_id 1}}}
         {{/each}}
     </div>
     <div class="movies" data-catid="2">
-        <h2>Movies</h2>
+        <a href="/categories/2"><h2>Movies</h2></a>
         {{#each posts as |post| }}
         {{{map_category post.title post.body post.user.username post.category_id 2}}}
         {{/each}}
     </div>
     <div class="music" data-catid="3">
-        <h2>Music</h2>
+        <a href="/categories/3"><h2>Music</h2></a>
         {{#each posts as |post| }}
         {{{map_category post.title post.body post.user.username post.category_id 3}}}
         {{/each}}
     </div>
     <div class="sports" data-catid="4">
-        <h2>Sports</h2>
+        <a href="/categories/4"><h2>Sports</h2></a>
         {{#each posts as |post| }}
         {{{map_category post.title post.body post.user.username post.category_id 4}}}
         {{/each}}
     </div>
     <div class="books" data-catid="5">
-        <h2>Books</h2>
+        <a href="/categories/5"><h2>Books</h2></a>
         {{#each posts as |post| }}
         {{{map_category post.title post.body post.user.username post.category_id 5}}}
         {{/each}}
