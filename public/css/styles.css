@@ -34,18 +34,21 @@ a.nav{
 }
 .tv-show{
     display: flex;
+    flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 10cm; 
     border-spacing: 10cm;
     border-radius: 15px;
 }
 .post{
+    flex-direction: column;
     padding:2px 16px;
     border-radius: 15px;
     border-spacing: 10cm;
 }
 .movies{
     display: flex;
+    flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 10cm; 
     border-spacing: 10cm;
@@ -53,6 +56,7 @@ a.nav{
 }
 .music{
     display: flex;
+    flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 10cm; 
     border-spacing: 10cm;
@@ -60,13 +64,15 @@ a.nav{
 }
 .sports{
     display: flex;
+    flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 10cm; 
     border-spacing: 10cm;
     border-radius: 15px;
 }
 .books{
-    display: flex;
+    display: flex; 
+    flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 10cm; 
     border-spacing: 10cm;
