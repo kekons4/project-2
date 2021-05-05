@@ -21,6 +21,7 @@ router.get('/', async (req, res) => {
 
         res.render('dashboard', {
             posts,
+            avatar_url: req.session.avatar_url,
             logged_in: req.session.logged_in
         });
     } catch (err) {
@@ -29,7 +30,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/post', withAuth, async (req, res) => {
-    res.render('post', {logged_in: req.session.logged_in, user_id: req.session.user_id});
+    res.render('dashboardpost', {avatar_url: req.session.avatar_url, logged_in: req.session.logged_in, user_id: req.session.user_id});
 })
 
 
