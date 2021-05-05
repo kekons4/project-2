@@ -15,4 +15,4 @@ const deletePost = async(event) => {
     }
 };
 
-$('#my-posts').on('click', '#delete-post', deletePost);
+$('.post-cont').on('click', '#delete-post', deletePost);

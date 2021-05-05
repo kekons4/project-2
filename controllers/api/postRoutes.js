@@ -14,7 +14,7 @@ router.post('/create', withAuth, async (req, res) => {
 
 router.delete('/delete', withAuth, async (req, res) => {
     try {
-        const postData = await Post.destroy({where: {id: req.params.id, user_id: req.session.user_id}});
+        const postData = await Post.destroy({where: {id: req.body.id, user_id: req.session.user_id}});
         if (!postData) {
             res.status(400).json({message: "There was no post found with this id."});
             return;
