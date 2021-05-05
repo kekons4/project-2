@@ -7,21 +7,21 @@
         {{#each comments as |comment|}}
         <div class="comment-card">
             <p>{{comment.body}}</p>
-            <span>{{comment.user.username}}</span>
-            <span>{{comment.date_created}}</span>
+            <span>User: {{comment.user.username}}</span>
+            <span>Date Created: {{format_date comment.date_created}}</span>
         </div>
         {{/each}}
     </div>
 </div>
 
 {{#if logged_in}}
-<form id="commenting" action="submit">
+<form class="create-comment" action="submit">
     <div class="comment">
         <label for="comment-body">Comment:</label>
         <input id="body" type="text">
-        <button type="submit">comment</button>
+        <button id="create-comment" data-user={{user_id}} data-post={{post_id}} type="submit">comment</button>
     </div>
 </form>
 {{/if}}
 
-<script src="/js/createComment.js"></script>
+<script src="/js/newComment.js"></script>
