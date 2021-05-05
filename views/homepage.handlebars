@@ -1,16 +1,16 @@
 <div class="category-cont">
-    {{!-- {{#each posts as |post|}} --}}
-    <div class="tv-show" data-catid="1">
+      <div class="tv-show" data-catid="1">
         <a href="/categories/1"><h2>Tv Shows</h2></a>
+        <p class="post">
         {{#each posts as |post| }}
         {{{map_category post.title post.body post.user.username post.category_id 1}}}
-        {{/each}}
+        {{/each}}</p>
     </div>
     <div class="movies" data-catid="2">
         <a href="/categories/2"><h2>Movies</h2></a>
-        {{#each posts as |post| }}
+        <p class="post">{{#each posts as |post| }}
         {{{map_category post.title post.body post.user.username post.category_id 2}}}
-        {{/each}}
+        {{/each}}</p>
     </div>
     <div class="music" data-catid="3">
         <a href="/categories/3"><h2>Music</h2></a>
@@ -30,5 +30,4 @@
         {{{map_category post.title post.body post.user.username post.category_id 5}}}
         {{/each}}
     </div>
-    {{!-- {{/each}} --}}
 </div>

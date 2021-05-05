@@ -5,36 +5,99 @@
     --gryblu:#BFD0E0;
     --lavendergry:#B8B3BE;
 }
- 
+* {
+    box-sizing: border-box;
+  }
 body
-{background-color: var(--lavendergry);
+{background-color: var(--gryblu);
     text-align: center;
     text-shadow: 1,1,1 navy;
 }
-.category-cont{
+h1{
     display: flex;
-    background-color: var(--skyblu);
-    width: 3px animate top;
-}
-.card{
-outline-offset: 2cm;
-border-spacing: 5cm;
-border-radius: 15px 50px 30px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+    width: auto;
 
+}
+.nav{
+    display: flex;
+    text-align: left;
+}
+    
+
+.nav a{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    padding: 14px 20px;
+}
+.category-cont{
+    background-color: var(--skyblu);
+    animation-fill-mode:none;
+    animation-delay: 3s;
+    border-radius: 15px 50px 30px;
+
+}
+.tv-show{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10cm; 
+    border-spacing: 10cm;
+    border-radius: 15px;
+}
+.post{
+    flex-direction: column;
+    padding:2px 16px;
+    border-radius: 15px;
+    border-spacing: 10cm;
+}
+.movies{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10cm; 
+    border-spacing: 10cm;
+    border-radius: 15px;
+}
+.music{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10cm; 
+    border-spacing: 10cm;
+    border-radius: 15px;
+}
+.sports{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10cm; 
+    border-spacing: 10cm;
+    border-radius: 15px;
+}
+.books{
+    display: flex; 
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10cm; 
+    border-spacing: 10cm;
+    border-radius: 15px;
 }
 .card :hover{
 border-style: ridge;
 
 }
 .card-header{
-text-align: center;
-background-color: var(--gryblu);
-color: black;
+    text-align: center;
+    background-color: var(--gryblu);
+    color: black;
 }
 .card-body{
-text-align: justify;
-background-color: var(--lgtblu);
-color: navy;
+    flex-direction: column;
+    background-color: var(--lgtblu);
+    color: navy;
 }
 .comment-card{
     background-color: aquamarine;
@@ -44,16 +107,19 @@ color: navy;
     color: rgb(27, 154, 147) ;
 }
 #email{
+    float: center;
     color: navy;
     box-shadow: navy;
     border: thick;
 }
 #password{
+    float: center;
     color: black;
     box-shadow: navy;
     border: thick;
 }
 #login-btn{
+    float: center;
     background-color: palegreen;
     color: white;
     padding: 15px 32px;
@@ -64,3 +130,13 @@ color: navy;
 #login-btn :hover{
     background-color: rgb(135, 189, 135);
       }
+@media screen and(max-width:992px){
+    .column{
+        width:50%
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+      width: 50%;
+    }
+  }
