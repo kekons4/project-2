@@ -3,13 +3,14 @@ const updatePost = async(event) => {
 
     const title = document.querySelector('#post-title').value.trim();
     const body = document.querySelector('#post-body').value.trim();
+    const category_id = document.querySelector('#post-category').value.trim();
     const user_id = document.querySelector('#update-post').getAttribute('data-user');
     const id = document.querySelector('#update-post').getAttribute('data-post');
 
     if( title && body) {
-        const response = await fetch('/api/post/', {
+        const response = await fetch('/api/post/update', {
             method: 'PUT',
-            body: JSON.stringify({ id, title, body, user_id }),
+            body: JSON.stringify({ id, title, body, category_id, user_id }),
             headers: { 'Content-Type': 'application/json' }
         });
 

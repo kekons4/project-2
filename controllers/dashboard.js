@@ -31,7 +31,11 @@ router.get('/', async (req, res) => {
 
 router.get('/post', withAuth, async (req, res) => {
     res.render('dashboardpost', {avatar_url: req.session.avatar_url, logged_in: req.session.logged_in, user_id: req.session.user_id});
-})
+});
+
+router.get('/update/:id', withAuth, async (req, res) => {
+    res.render('dashboardupdate', {post_id: req.params.id, avatar_url: req.session.avatar_url, logged_in: req.session.logged_in, user_id: req.session.user_id});
+});
 
 
 module.exports = router;
