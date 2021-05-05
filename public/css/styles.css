@@ -5,25 +5,31 @@
     --gryblu:#BFD0E0;
     --lavendergry:#B8B3BE;
 }
- 
+* {
+    box-sizing: border-box;
+  }
 body
 {background-color: var(--gryblu);
     text-align: center;
     text-shadow: 1,1,1 navy;
 }
 h1{
+    display: flex;
     font-family: "Times New Roman", Times, serif;
     text-align: left;
+    width: auto;
 
 }
 .nav{
+    display: flex;
     text-align: left;
 }
     
 
-a.nav{
+.nav a{
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
+    padding: 14px 20px;
 }
 .category-cont{
     background-color: var(--skyblu);
@@ -35,6 +41,7 @@ a.nav{
 .tv-show{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 10cm; 
     border-spacing: 10cm;
@@ -123,3 +130,13 @@ border-style: ridge;
 #login-btn :hover{
     background-color: rgb(135, 189, 135);
       }
+@media screen and(max-width:992px){
+    .column{
+        width:50%
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+      width: 50%;
+    }
+  }
