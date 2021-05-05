@@ -1,7 +1,9 @@
 <div class="post-cont">
      {{#each posts as |post|}}
      <div class="post-card">
-         <span>{{post.title}}</span>
+         <a href="/dashboard/update/{{post.id}}">
+            <span>{{post.title}}</span>
+         </a>
          <span>{{format_date post.date_created}}</span>
          <a id="delete-post"><i data-id={{post.id}} data-user={{post.user_id}} class="fa fa-trash"></i></a>
      </div>
