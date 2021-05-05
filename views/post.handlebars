@@ -4,7 +4,11 @@
     </div>
     <div class="card-body">
         <p>{{post.body}}</p>
+        <span>User: {{post.user.username}}</span>
+        <span>Date Created: {{format_date post.date_created}}</span>
         {{#each comments as |comment|}}
+        <br/>
+        <span>Comments:</span>
         <div class="comment-card">
             <p>{{comment.body}}</p>
             <span>User: {{comment.user.username}}</span>
