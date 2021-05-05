@@ -14,7 +14,10 @@ router.get('/', async (req, res) => {
                     model: Category,
                     attributes: ["name"]
                 }
-            ]
+            ],
+            where: {
+                user_id: req.session.user_id
+            }
         });
 
         const posts = postData.map((post) => post.get({ plain: true }));
