@@ -11,23 +11,66 @@ body
     text-align: center;
     text-shadow: 1,1,1 navy;
 }
-.nav{
-    float: left;
+h1{
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+
 }
+.nav{
+    text-align: left;
+}
+    
+
 a.nav{
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
 }
 .category-cont{
-    display: flex;
     background-color: var(--skyblu);
-    width: 3px animate top;
-}
-.card{
-outline-offset: 2cm;
-border-spacing: 5cm;
-border-radius: 15px 50px 30px;
+    animation-fill-mode:none;
+    animation-delay: 3s;
+    border-radius: 15px 50px 30px;
 
+}
+.tv-show{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10cm; 
+    border-spacing: 10cm;
+    border-radius: 15px;
+}
+.post{
+    padding:2px 16px;
+    border-radius: 15px;
+    border-spacing: 10cm;
+}
+.movies{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10cm; 
+    border-spacing: 10cm;
+    border-radius: 15px;
+}
+.music{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10cm; 
+    border-spacing: 10cm;
+    border-radius: 15px;
+}
+.sports{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10cm; 
+    border-spacing: 10cm;
+    border-radius: 15px;
+}
+.books{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10cm; 
+    border-spacing: 10cm;
+    border-radius: 15px;
 }
 .card :hover{
 border-style: ridge;
@@ -39,7 +82,6 @@ background-color: var(--gryblu);
 color: black;
 }
 .card-body{
-text-align: justify;
 background-color: var(--lgtblu);
 color: navy;
 }
