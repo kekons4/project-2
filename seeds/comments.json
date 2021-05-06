@@ -10,5 +10,20 @@
         "body": "I think Jakob will turn on Cipher and side with Dom",
         "user_id":1 ,
         "post_id":2
+    },
+    {
+        "body": "I think Drake will win the top artist this year!",
+        "user_id":4 ,
+        "post_id":3
+    },
+    {
+        "body": "I'm looking forward to the Indians winning the world series this year!",
+        "user_id":3 ,
+        "post_id":4
+    },
+    {
+        "body": "I can't wait to read Ghost in the Wires!",
+        "user_id":4 ,
+        "post_id":5
     }
 ]

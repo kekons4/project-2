@@ -4,7 +4,7 @@
         "body": "What do you think of the House of the Dragon prequel in production to launch in 2022?",
         "user_id":1,
         "category_id":1
-
+        
     },
     {
         "title":"Fast and the Furious",
@@ -15,19 +15,19 @@
     {
         "title":"music",
         "body": "Who do you want to win the Billboard Music Awards? ",
-        "user_id":2,
+        "user_id":3,
         "category_id":3
     },
     {
         "title":"sports",
         "body": "As the PGA Tour NASCAR and MLB are in full swing, what is the game you are most looking forward to? ",
-        "user_id":2,
+        "user_id":4,
         "category_id":4
     },
     {
         "title":"books",
         "body": "What is your most anticipated book of 2021 to read?",
-        "user_id":2,
+        "user_id":1,
         "category_id":5
     }
 ]    
