@@ -39,6 +39,14 @@ Post.init(
                 model: 'category',
                 key: 'id'
             }
+        },
+        likes: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        dislikes: {
+            type: DataTypes.INTEGER,
+            allowNull: false
         }
     },
     {

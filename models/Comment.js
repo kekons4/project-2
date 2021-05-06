@@ -35,6 +35,14 @@ Comment.init(
                 model: 'post',
                 key: 'id'
             }
+        },
+        likes: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        dislikes: {
+            type: DataTypes.INTEGER,
+            allowNull: false
         }
     },
     {
