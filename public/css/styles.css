@@ -9,7 +9,8 @@
     box-sizing: border-box;
   }
 body
-{background-color: var(--gryblu);
+{
+    background-color: var(--gryblu);
     text-align: center;
     text-shadow: 1,1,1 navy;
 }
@@ -17,14 +18,14 @@ h1{
     display: flex;
     font-family: "Times New Roman", Times, serif;
     text-align: left;
-    width: auto;
+    width: 50%;
 
 }
 .nav{
     display: flex;
     text-align: left;
-}
-    
+    width: 50%;
+}  
 
 .nav a{
     font-family: "Times New Roman", Times, serif;
@@ -46,6 +47,7 @@ h1{
     margin: 10cm; 
     border-spacing: 10cm;
     border-radius: 15px;
+   background-color: var(--skyblu);
 }
 .post{
     flex-direction: column;
@@ -60,6 +62,8 @@ h1{
     margin: 10cm; 
     border-spacing: 10cm;
     border-radius: 15px;
+    background-color: var(--skyblu);
+    opacity: .75;
 }
 .music{
     display: flex;
@@ -68,6 +72,8 @@ h1{
     margin: 10cm; 
     border-spacing: 10cm;
     border-radius: 15px;
+    background-color: var(--skyblu);
+    opacity: .50;
 }
 .sports{
     display: flex;
@@ -76,6 +82,8 @@ h1{
     margin: 10cm; 
     border-spacing: 10cm;
     border-radius: 15px;
+    background-color: var(--skyblu);
+    opacity: .35;
 }
 .books{
     display: flex; 
@@ -84,6 +92,8 @@ h1{
     margin: 10cm; 
     border-spacing: 10cm;
     border-radius: 15px;
+    background-color: var(--skyblu);
+    opacity: .15;
 }
 .card :hover{
 border-style: ridge;
@@ -130,6 +140,33 @@ border-style: ridge;
 #login-btn :hover{
     background-color: rgb(135, 189, 135);
       }
+.category-header{
+    font-weight: bold;
+    font-size: xx-large;
+    font-style: italic;
+}
+.category-body{
+    flex: auto;
+    font-weight: bold;
+    padding: 14px 20px;
+    align-items: center; 
+    font-size: x-large;
+}
+.category-body a{
+    padding: 14px 20px;
+}
+.post-title{
+    font-size: xx-large;
+    font-style: italic;
+}
+.post-body{
+    font-size: x-large;
+    text-shadow: darkblue;
+}
+.post-category{
+    font-weight: bolder;
+}
+
 @media screen and(max-width:992px){
     .column{
         width:50%
