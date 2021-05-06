@@ -5,12 +5,13 @@
     --gryblu:#BFD0E0;
     --lavendergry:#B8B3BE;
 }
+
 * {
     box-sizing: border-box;
   }
 body
 {
-    background-color: var(--gryblu);
+    background-color: var(--lgtblu);
     text-align: center;
     text-shadow: 1,1,1 navy;
 }
@@ -19,7 +20,6 @@ h1{
     font-family: "Times New Roman", Times, serif;
     text-align: left;
     width: 50%;
-
 }
 .nav{
     display: flex;
@@ -32,66 +32,75 @@ h1{
     font-weight: bold;
     padding: 14px 20px;
 }
+
 .category-cont{
+    display:inline-flex;
+    flex-wrap: wrap;
     background-color: var(--skyblu);
-    animation-fill-mode:none;
+    animation-fill-mode:forwards;
     animation-delay: 3s;
     border-radius: 15px 50px 30px;
 
 }
+
 .tv-show{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 10cm; 
-    border-spacing: 10cm;
-    border-radius: 15px;
-   background-color: var(--skyblu);
-}
-.post{
-    flex-direction: column;
+    animation-fill-mode:forwards;
+    animation-delay: 3s;
+    /*margin: 10cm; 
     padding:2px 16px;
-    border-radius: 15px;
     border-spacing: 10cm;
+    border-radius: 15px;*/
+    width: 20%;
+    background-color: var(--skyblu);
 }
 .movies{
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 10cm; 
+    /*margin: 10cm; 
+    padding:2px 16px;
     border-spacing: 10cm;
-    border-radius: 15px;
+    border-radius: 15px;*/
+    width: 20%;
     background-color: var(--skyblu);
     opacity: .75;
 }
 .music{
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 10cm; 
+    /*margin: 10cm; 
+    padding:2px 16px;
     border-spacing: 10cm;
-    border-radius: 15px;
+    border-radius: 15px;*/
+    width: 20%;
     background-color: var(--skyblu);
     opacity: .50;
 }
 .sports{
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 10cm; 
+    /*margin: 10cm; 
+    padding:2px 16px;
     border-spacing: 10cm;
-    border-radius: 15px;
+    border-radius: 15px;*/
+    width: 20%;
     background-color: var(--skyblu);
     opacity: .35;
 }
 .books{
-    display: flex; 
-    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 10cm; 
+    /*margin: 10cm; 
+    padding:2px 16px;
     border-spacing: 10cm;
-    border-radius: 15px;
+    border-radius: 15px;*/
+    width: 20%;
     background-color: var(--skyblu);
     opacity: .15;
 }
@@ -158,6 +167,12 @@ border-style: ridge;
 .post-title{
     font-size: xx-large;
     font-style: italic;
+    text-shadow: darkblue;
+}
+.post-card{
+    font-size: xx-large;
+    font-style: italic;
+    text-shadow: darkblue;
 }
 .post-body{
     font-size: x-large;
@@ -166,7 +181,16 @@ border-style: ridge;
 .post-category{
     font-weight: bolder;
 }
+.signup-body{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.signup-header{
+    font-size: xx-large;
+    font-weight: bold;
+}
 
+/*
 @media screen and(max-width:992px){
     .column{
         width:50%
@@ -177,3 +201,4 @@ border-style: ridge;
       width: 50%;
     }
   }
+  */
