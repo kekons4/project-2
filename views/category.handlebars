@@ -4,15 +4,14 @@
     </div>
     <div class="card-body">
         {{#each posts as |post|}}
-        <a href="/post/{{post.id}}">
             <div class="post-card">
-                <h5>{{post.title}}</h5>
-                <p>{{post.body}}</p>
-                <span>{{post.username}}</span>
-                <span>{{format_date post.date_created}}</span>
-                {{post.category.name}}
+                <a href="/post/{{post.id}}">
+                    <h5>{{post.title}}</h5>
+                    <p>{{post.body}}</p>
+                    <span>{{post.username}}</span>
+                    <span>{{format_date post.date_created}}</span>
+                </a>
             </div>
-        </a>
         {{/each}}
     </div>
 </div>

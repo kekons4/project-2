@@ -1,0 +1,316 @@
+:root {
+    --primary-color: blue;
+    --bg-color: #efefef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #dfdbdb;
+    /* border: 1px black solid; */
+}
+
+/* Header CSS Rules */
+header h1 {
+    text-shadow: 0px 1px 3px grey;
+    margin-left: 100px;
+    /* transition: all, 0.5s; */
+}
+
+header h1 span {
+    font-size: 25px;
+}
+
+/* header h1:hover {
+    letter-spacing: 3px;
+} */
+
+header nav {
+    /* border: 1px black solid; */
+    padding: 10px;
+    margin-right: 100px;
+    /* margin-left: 500px; */
+}
+
+header img {
+    border-radius: 100%;
+    width: 5%;
+}
+
+header nav .link-item {
+    text-decoration: none;
+    color: black;
+    padding-right: 25px;
+}
+
+header nav .link-item:hover {
+    color: red;
+}
+
+/* creates space between nav bar */
+
+.space {
+    height: 50px;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    /* border: 1px black solid; */
+}
+
+/* Card CSS Rules */
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* justify-content: center;
+    align-items: center; */
+    /* border: 1px grey solid; */
+    border-radius: 10px;
+    /* padding: 10px; */
+    margin: 15px;
+    width: 700px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    border-bottom: 1px grey solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* margin: 0; */
+}
+
+.card-header a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-header a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 1px grey solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.card-body button {
+    margin-top: 15px;
+    width: 100px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.card-body span {
+    font-size: 12px;
+}
+
+.dashboard-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: grey;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.dashboard-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.dashboard-card a:hover {
+    color: red;
+}
+
+.new-post {
+    background-color: rgb(248, 33, 33);
+    padding: 7px;
+    border: 2px black solid;
+    border-radius: 10px;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.new-post:hover {
+    opacity: 0.5;
+}
+
+.category-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* border: 1px black solid; */
+}
+
+.tv-show , .movies , .books , .sports , .music {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* justify-content: center; */
+    width: 20%;
+    border-left: 1px rgb(141, 141, 141) solid;
+    /* border-radius: 10px; */
+}
+
+.tv-show a, .movies a, .books a, .sports a, .music a {
+    text-decoration: none;
+    color: black;
+}
+
+.tv-show a:hover, .movies a:hover, .books a:hover, .sports a:hover, .music a:hover {
+    color: red;
+}
+
+.tv-show .card, .movies .card, .books .card, .sports .card, .music .card {
+    border: 1px black solid;
+    margin: 0;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.category-header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-self: center;
+    text-decoration: underline;
+    margin: 0;
+    background-color: grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.category-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.category-body a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.category-body a:hover {
+    color: red;
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-top: 2px grey dotted;
+}
+
+.post-card:hover {
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    border-top: none;
+}
+
+.post-card a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 780px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header h1 {
+        margin-left: 0;
+    }
+
+    header nav {
+        margin-right: 0;
+    }
+    
+    .space {
+        height: 100px;
+    }
+
+    .card {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .card {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .card {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .dashboard-card {
+        /* width: 250px; */
+        flex-direction: column;
+    }
+
+    .card {
+        width: 300px;
+    }
+}

@@ -1,10 +1,10 @@
 module.exports = {
-    map_category: (title, body, username, categoryId, id) => {
+    map_category: (title, body, date_created, username, categoryId, id) => {
         if(categoryId == id) {
             return `<div class="card">
                         <div class="card-body">
                             <div class="post-card">
-                                <h5>${title}</h5>
+                                <a href="/post/${id}"><h5>${title}</h5></a>
                                 <p>${body}</p>
                                 <span>${username}</span>
                             </div>
