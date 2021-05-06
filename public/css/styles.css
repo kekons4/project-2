@@ -43,6 +43,11 @@ h1{
 
 }
 
+header img {
+    width: 10%;
+    border-radius: 100%;
+}
+
 .tv-show{
     flex-direction: row;
     text-align: center;
@@ -66,7 +71,7 @@ h1{
     border-radius: 15px;*/
     width: 20%;
     background-color: var(--skyblu);
-    opacity: .75;
+    /* opacity: .75; */
 }
 .music{
     flex-direction: row;
@@ -78,7 +83,7 @@ h1{
     border-radius: 15px;*/
     width: 20%;
     background-color: var(--skyblu);
-    opacity: .50;
+    /* opacity: .50; */
 }
 .sports{
     flex-direction: row;
@@ -90,7 +95,7 @@ h1{
     border-radius: 15px;*/
     width: 20%;
     background-color: var(--skyblu);
-    opacity: .35;
+    /* opacity: .35; */
 }
 .books{
     flex-direction: row;
@@ -102,7 +107,7 @@ h1{
     border-radius: 15px;*/
     width: 20%;
     background-color: var(--skyblu);
-    opacity: .15;
+    /* opacity: .15; */
 }
 .card :hover{
 border-style: ridge;
