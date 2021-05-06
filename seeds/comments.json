@@ -3,12 +3,16 @@
      
      "body": "The trailers look like its going to be amazing!",
      "user_id":2,
-     "post_id":1
+     "post_id":1,
+     "likes": 2,
+     "dislikes": 0
      
     },
     {
         "body": "I think Jakob will turn on Cipher and side with Dom",
         "user_id":1 ,
-        "post_id":2
+        "post_id":2,
+        "likes": 11,
+        "dislikes": 2
     }
 ]

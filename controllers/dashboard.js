@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Post, User, Category } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     try {
         const postData = await Post.findAll({ 
             include: [
@@ -37,7 +37,17 @@ router.get('/post', withAuth, async (req, res) => {
 });
 
 router.get('/update/:id', withAuth, async (req, res) => {
-    res.render('dashboardupdate', {post_id: req.params.id, avatar_url: req.session.avatar_url, logged_in: req.session.logged_in, user_id: req.session.user_id});
+    try {
+        const postData = await Post.findByPk(req.params.id);
+        if(!postData) {
+            res.status(404).json({message: "ERROR you have no post with that id"});
+            return;
+        }
+        const post = postData.get({plain: true});
+        res.render('dashboardupdate', {post, post_id: req.params.id, avatar_url: req.session.avatar_url, logged_in: req.session.logged_in, user_id: req.session.user_id});
+    } catch (error) {
+        
+    }
 });
 
 

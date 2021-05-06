@@ -1,18 +1,22 @@
-<form id="login" action="submit">
-    <div class="card">
-        <div class="login-header">
-            <h3>Login</h3>
+<div class="comment-cont">
+    <form id="login" action="submit">
+        <div class="card">
+            <div class="card-header">
+                <h2>Login</h2>
+            </div>
+            <div class="card-body">
+                <label for="email-login">Email:</label>
+                <input id="email" type="email"/>
+                <br/>
+                <label for="password-login">Password:</label>
+                <input id="password" type="password"/>
+                <div class="my-post-cont">
+                    <button id="login-btn" type="submit">Login</button>
+                    <a href="/signup">sign up</a>
+                </div>
+            </div>
         </div>
-        <div class="login-body">
-            <label for="email-login">Email:</label>
-            <input id="email" type="email"/>
-            <br/>
-            <label for="password-login">Password:</label>
-            <input id="password" type="password"/>
-            <button id="login-btn" type="submit">Login</button>
-        </div>
-    </div>
-</form>
-<a href="/signup">sign up</a>
+    </form>
+</div>
 
 <script src="/js/login.js"></script>

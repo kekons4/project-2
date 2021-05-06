@@ -11,6 +11,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     background-color: var(--bg-color);
+    text-shadow: 0px 0px 3px grey;
 }
 
 header {
@@ -22,6 +23,7 @@ header {
     align-items: center;
     width: 100%;
     background-color: #dfdbdb;
+    box-shadow: 0px 0px 10px grey;
     /* border: 1px black solid; */
 }
 
@@ -56,6 +58,7 @@ header nav .link-item {
     text-decoration: none;
     color: black;
     padding-right: 25px;
+    text-shadow: 0px 0px 3px grey;
 }
 
 header nav .link-item:hover {
@@ -197,6 +200,7 @@ main {
     /* justify-content: center; */
     width: 20%;
     border-left: 1px rgb(141, 141, 141) solid;
+    text-shadow: 0px 0px 3px grey;
     /* border-radius: 10px; */
 }
 
@@ -268,6 +272,103 @@ main {
     text-decoration: none;
     color: black;
 }
+
+.comment-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+
+.comment-cont h3 {
+    border-bottom: 1px black solid;
+    margin-bottom: 30px;
+}
+
+.comment-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #cacaca;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.comment-card label {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.comment-card span {
+    font-size: 12px;
+}
+
+.comment-card p {
+    font-size: 17px;
+}
+
+.comment-card button {
+    margin-top: 10px;
+    width: 20%;
+}
+
+.likes-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.likes-cont span {
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+.post-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-post-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30rem;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px grey;
+    background-color: rgb(165, 161, 161);
+}
+
+.my-post-card a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.my-post-card a:hover {
+    color: red;
+}
+
+/* .post-card-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+} */
 
 @media only screen and (max-width: 780px) {
     header {
