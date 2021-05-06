@@ -40,4 +40,36 @@ router.put('/update', withAuth, async (req, res) => {
 });
 
 
+router.put('/like', withAuth, async (req, res) => {
+    try {
+        const likeData = await Post.update(req.body, {
+            where: {id: req.body.id, user_id: req.body.user_id}
+        });
+
+        if(!likeData) {
+            res.status(400).json({message: "ERROR in adding like to post"});
+            return;
+        }
+        res.status(200).json(likeData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+router.put('/dislike', withAuth, async (req, res) => {
+    try {
+        const dislikeData = await Post.update(req.body, {
+            where: {id: req.body.id, user_id: req.body.user_id}
+        });
+
+        if(!dislikeData) {
+            res.status(400).json({message: "ERROR in adding dislike to post"});
+            return;
+        }
+        res.status(200).json(dislikeData);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 module.exports = router;
