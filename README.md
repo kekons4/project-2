@@ -1,4 +1,4 @@
-# project-2
+# Social Social Media
 This is Project 2 of the OSU Coding bootcamp
 
 ## Description
