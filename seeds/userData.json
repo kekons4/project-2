@@ -1,14 +1,26 @@
 [
     {
-      "username":"Test User1",
-      "email": "test1@hotmail.com",
+      "username":"jsmith27",
+      "email": "jsmith@hotmail.com",
       "password":"12348abc",
       "avatar_url":"slkdjfoj"
     },
     {
-       "username":"Test User1",
-       "email": "test2@gmail.com",
+       "username":"twilliams0",
+       "email": "twilliams@gmail.com",
        "password":"12345abc",
        "avatar_url":"sjdpfoj"
-    }
+    },
+    {
+      "username":"kgrimone7",
+      "email": "kgrimone7@gmail.com",
+      "password":"12345abcd",
+      "avatar_url":"sjdpfoj"
+   },
+   {
+    "username":"bthomas22",
+    "email": "bthomas@hotmail.com",
+    "password":"12347abc",
+    "avatar_url":"slkdjfoj"
+  }
 ]

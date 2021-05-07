@@ -5,10 +5,12 @@ const newPost = async(event) => {
     const body = document.querySelector('#body').value.trim();
     const category_id = document.querySelector('#category').value.trim();
     const user_id = document.querySelector('#create-post').getAttribute('data-item');
+    const likes = 0;
+    const dislikes = 0;
 
     const response = await fetch('/api/post/create', {
         method: 'POST',
-        body: JSON.stringify({title, body, category_id, user_id}),
+        body: JSON.stringify({title, body, category_id, user_id, likes, dislikes}),
         headers: { 'Content-Type': 'application/json' }
     });
 
