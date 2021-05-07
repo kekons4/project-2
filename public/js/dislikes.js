@@ -15,7 +15,7 @@ const addDislike = async(event) => {
     });
 
     if(response.ok) {
-        // document.location.replace(`/post/${id}`);
+        // document.location.replace(`/login`);
     } else {
         alert('Failed to add dislike');
     }
@@ -42,7 +42,7 @@ const addCommentDislike = async(event) => {
     });
 
     if(response.ok) {
-        // document.location.replace(`/post/${id}`);
+        // document.location.replace(`/login}`);
     } else {
         alert('Failed to add dislike');
     }

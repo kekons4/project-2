@@ -15,7 +15,7 @@ const addLike = async(event) => {
     });
 
     if(response.ok) {
-        // document.location.replace(`/post/${id}`);
+        // document.location.replace(`/login`);
     } else {
         alert('Failed to add like');
     }
@@ -42,7 +42,7 @@ const addCommentLike = async(event) => {
     });
 
     if(response.ok) {
-        // document.location.replace(`/post/${id}`);
+        // document.location.replace(`/login`);
     } else {
         alert('Failed to add like');
     }

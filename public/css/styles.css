@@ -43,25 +43,31 @@ h1{
 }
 
 
+header img {
+    width: 10%;
+    border-radius: 100%;
+}
+
 .tv-show{
     flex-direction: row;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     animation-fill-mode:forwards;
     animation-delay: 3s;
-        width: 20%;
+    width: 20%;
     background-color: var(--skyblu);
     border-radius: 25px;
+
 }
 .movies{
     flex-direction: row;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        width: 20%;
+    width: 20%;
     background-color: var(--skyblu);
     opacity: .75;
     border-radius: 25px;
-}
+  
 .music{
     flex-direction: row;
     text-align: center;
@@ -78,8 +84,7 @@ h1{
     background-color: var(--skyblu);
     opacity: .75;
     border-radius: 25px;
-    
-}
+  }
 .books{
     flex-direction: row;
     text-align: center;
@@ -177,6 +182,7 @@ h1{
     font-size: xx-large;
     font-weight: bold;
 }
+  
 .post-cont{
     font-weight: bold;
     font-size: xx-large;
