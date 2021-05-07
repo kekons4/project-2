@@ -16,7 +16,7 @@ const signupHandler = async(event) => {
     console.log(avatar_url);
 
     if(email && password) {
-        const response = await fetch('/api/users', {
+        const response = await fetch('/api/users/create', {
             method: 'POST',
             body: JSON.stringify({ email, username, password, avatar_url }),
             headers: { 'Content-Type': 'application/json' }
