@@ -26,7 +26,7 @@ Link to live site: https://still-fjord-88148.herokuapp.com/
 
 You can install this project via https://github.com/kekons4/social-social-media.git
 Technology used: node.js
-libraries used: mysql2, sequelize, express.js, express-handlebars
+libraries used: mysql2, sequelize, express.js, express-handlebars,awesomefont
 
 ## Usage
 
