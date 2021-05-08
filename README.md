@@ -6,7 +6,7 @@ This project is an MVC based social media website that allows users to create
 and account giving them access to post thoughts and ideas. The user can also like, dislike,
 and comment on other peoples posts.
 
-Link to live site: 
+Link to live site: https://still-fjord-88148.herokuapp.com/
 
 ## Screenshots
 
