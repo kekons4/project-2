@@ -8,7 +8,7 @@ const newPost = async(event) => {
     const likes = 0;
     const dislikes = 0;
 
-    const response = await fetch('https://still-fjord-88148.herokuapp.com/api/post/create', {
+    const response = await fetch('/api/post/create', {
         method: 'POST',
         body: JSON.stringify({title, body, category_id, user_id, likes, dislikes}),
         headers: { 'Content-Type': 'application/json' }
