@@ -8,8 +8,8 @@ module.exports = {
                                 <p>${body}</p>
                                 <span>${username}</span>
                                 <div class="likes-cont">
-                                    <span>${likes}</span><a id="add-like" data-post=${id} data-count=${likes} data-user=${user_id}><i class="fa fa-thumbs-up"></i></a>
-                                    <span>${dislikes}</span><a id="add-dislike" data-post=${id} data-count=${dislikes} data-user=${user_id}><i class="fa fa-thumbs-down"></i></a>
+                                    <span>${likes}</span><a id="add-like" data-post=${post_id} data-count=${likes} data-user=${user_id}><i class="fa fa-thumbs-up"></i></a>
+                                    <span>${dislikes}</span><a id="add-dislike" data-post=${post_id} data-count=${dislikes} data-user=${user_id}><i class="fa fa-thumbs-down"></i></a>
                                 </div>
                             </div>
                         </div>
